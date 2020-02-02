@@ -25,3 +25,6 @@ Avram.configure do |settings|
   # Uncomment the next line to log all SQL queries
   # settings.query_log_level = ::Logger::Severity::DEBUG
 end
+
+# sudo -u postgres psql -p 5433
+# CREATE USER lpbb with encrypted password 'lpbb'; CREATE DATABASE lpbb; GRANT ALL PRIVILEGES ON DATABASE lpbb to lpbb; CREATE DATABASE lpbb_testing; GRANT ALL PRIVILEGES ON DATABASE lpbb_testing to lpbb;
